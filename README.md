@@ -1,2 +1,2 @@
 # twitterscripts
-twitterscripts for gathering Twitter data I need for my PhD project.
+twitterscripts for wrangling Twitter data I need for my PhD project.
