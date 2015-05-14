@@ -2,7 +2,6 @@
 # insert consumer and app keys below
 # run (eg in Terminal): python3 scriptname.py inputfile.csv outputfile.csv
 # inputfile is a list of usernames
-# (c) by Felix Victor Muench (fvmuench@gmail.com)
 
 import time
 import csv
@@ -59,6 +58,8 @@ def get_screen_name_and_created_at(uids):
             break
         else:
             j = i + 100
+            if j > friend_count:
+                j = friend_count
             try:
                 users = api.lookup_users(user_ids=uids[i:j])
                 for user in users:
