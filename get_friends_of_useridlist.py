@@ -38,7 +38,7 @@ def get_friend_ids(userid):
             idcount += 1
     except tweepy.TweepError as e:
         idlist.append(-int(e.reason[-3:]))
-        print(e.reason + ' for ' + userid)
+        print(e.reason + ' for %d' %(userid))
     
     print('%d friend ids collected for %d.' %(idcount,userid))
     
