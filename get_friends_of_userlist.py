@@ -2,6 +2,7 @@
 # insert consumer and app keys below
 # run (eg in Terminal): python3 scriptname.py inputfile.csv outputfile.csv
 # inputfile is a list of usernames
+# cc-by-nc Felix Victor Muench
 
 import time
 import csv
